@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+  <!-- Title -->
+  <title>Nomis Yang - a UI/UX designer</title>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/component.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="./css/animate.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+  <!-- Fancybox.css -->
+  <link rel="stylesheet" href="./css/fancybox.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+<body onload="init()">
+  <div class="wrapper">
+    <!-- Start background -->
+    <div class="bg"></div>
+    <!-- End background -->
+
+    <!-- Start header -->
+    <header id="header" class="header js-header">
+      <div class="container">
+        <div class="navbar row justify-content-center">
+          <div class="link-bar navbar__link-bar align-self-center row">
+            <ul id="link-bar__menu" class="link-bar__menu col-8 offset-2">
+              <li id="home-link" class="link-bar__item">
+                <a class="link" href="#home">HOME</a>
+              </li>
+              <li id="about-link" class="link-bar__item">
+                <a class="link" href="#about">ABOUT</a>
+              </li>
+              <li id="skill-link" class="link-bar__item">
+                <a class="link" href="#skill">SKILL</a>
+              </li>
+              <li id="experience-link" class="link-bar__item">
+                <a class="link" href="#experience">EXPERIENCE</a>
+              </li>
+              <li id="portfolio-link" class="link-bar__item">
+                <a class="link" href="#portfolio">PORTFOLIO</a>
+              </li>
+              <li id="contact-link" class="link-bar__item">
+                <a class="link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+            <a id="link-bar__burger" class="link-bar__burger col-2 u-mobile">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start main -->
+    <section class="main">
+
+      <!-- Start hero -->
+      <div id="home" class="hero title">
+        <div class="container section">
+          <div class="hero__bg"></div>
+          <div class="hero__content wow animate__animated animate__bounceInLeft">
+            <h1 class="hero__heading color-white">你好，<br>我是楊睿宇</h1>
+            <h1 class="hero__subtitle color-white"> UI/UX 設計師</h1>
+            <!-- <div class="hero__social-btn row">
+              <a href="#" class="icon-btn color-primary">
+                <i class="icon fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="icon-btn color-primary">
+                <i class="icon fa-brands fa-behance"></i>
+              </a>
+            </div> -->
+            <a href="#contact" class="btn btn--primary btn--sm btn--sm--md">與我聯絡</a>
+          </div>
+        </div>
+      </div>
+      <!-- End hero -->
+
+      <!-- Start About -->
+      <div id="about" class="about bg-color-white lean-bg--top lean-bg--no-margin title">
+        <div class="containter section">
+          <div class="row">
+            <div class="col-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
+              <div class="about__content color-black">
+                <div class="about__icon">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="about__avatar wow animate__animated animate__flip">
+                  <div class="about__avatar--image"></div>
+                </div>
+                <p class="about__text wow animate__animated animate__slideInLeft">你好！我是楊睿宇，29 歲。<br>社會心理學背景，擁有五年工作經驗，<br>沉著細心、責任心強，擅長溝通與協作。</p>
+                <p class="about__text wow animate__animated animate__slideInRight">2021 年選擇離開人資領域，轉職投入前端開發產業。<br>歷經「前端開發技術」專班與 UI/UX 線上課程學習，<br>能獨立完成包含前後端串接之網頁專題作品，具備：<br>
+                <ul class="about__text--menu wow animate__animated animate__fadeInUp">
+                  <li class="color-secondary">前端程式撰寫與功能設計能力</li>
+                  <li class="color-secondary">後端程式邏輯與基礎設計能力</li>
+                  <li class="color-secondary">User Story、Functional Map、Flow Chart 等 UX 思維</li>
+                  <li class="color-secondary">Wireframe、Mockup、Prototype 等 UI 繪製</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About -->
+
+
+      <!-- Start skill -->
+      <div id="skill" class="skill bg-color-white lean-bg--bottom title">
+        <div class="container section">
+          <h2 class="subtitle u-text-center wow animate__animated animate__tada">SKILL</h2>
+          <div class="skill-group">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">HTML</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">具備網站架設的基本知識、撰寫邏輯及命名規則等，並能獨立架設個人網站。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/html-icon.png" alt="HTML">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">CSS</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">能靈活運用選擇器、主流框架、函式庫，實現各種網頁動、靜態版面，並使用 Sass 預處理器管理 CSS。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/css-icon.png" alt="CSS">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Bootstrap</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">熟練 Bootstrap 5 前端框架與原理，能快速開發 RWD 響應式網站，達成不同裝置皆能順暢無阻的瀏覽體驗。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/bootstrap-icon.png" alt="Bootstrap">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">jQuery</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">能運用函式庫操作 HTML、JavaScript 與事件監聽指令，以實現各項網頁互動效果。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/jquery-icon.png" alt="jQuery">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Vue.js</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">了解三大前端主流框架之一的運作原理與邏輯，並具有實際開發完整專案之經驗。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/vue-icon.png" alt="Vue.js">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Node.js</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">能在 Node.js 框架下開發包含請求與回應的動態網站，具備後端程式基礎邏輯與撰寫能力。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/nodejs-icon.png" alt="Node.js">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">MongoDB</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">了解 NoSQL 資料庫運作原理，能透過 MongoDB 設計資料庫結構，實現彈性靈活的資料存取系統。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/mongodb-icon.png" alt="MongoDB">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Git</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">能透過 GitHub 佈署網站，操作 Git 版本控制並與團隊協作，了解 Git Flow 工作流程。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/github-icon.png" alt="GitHub">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Photoshop</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">具有圖像的去背、合成、修圖、透視技法、光影配置等操作經驗，具備基礎圖像處理能力。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/ps-icon.png" alt="Photoshop">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Illustrator</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">具有 Logo 設計、標準字、Icon、插圖等操作經驗，具備基礎向量圖處理及文字編輯排版能力。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/ai-icon.png" alt="Illustrator">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="skill-card wow animate__animated animate__bounceInDown">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Figma</h4>
+                    <!-- <hr class="skill-card__line"> -->
+                    <p class="skill-card__text">了解介面設計專案流程及軟體操作，能繪製 Wireframe、Mockup、Prototype 等設計稿，且具實作經驗。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="./images/skill_icon/figma-icon.png" alt="Figma">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End skill -->
+
+      <!-- Start experience -->
+      <div id="experience" class="experience title">
+        <div class="container section">
+          <h2 class="subtitle u-text-center color-white wow animate__animated animate__tada">EXPERIENCE</h2>
+          <div class="timeline-group">
+            <div class="timeline"></div>
+            <div class="timeline-cards">
+              <div class="timeline-cards__row">
+                <div class="timeline-card wow animate__animated animate__fadeInLeft">
+                  <p class="timeline-card__text">
+                  <div class="timeline-card__text--during">2011 / 09 - 2015 / 06</div>
+                  <div class="timeline-card__text--title color-primary"><i class="fa-solid fa-graduation-cap"></i> 社會心理學系 <span> / 世新大學 </span></div>
+                  <hr class="timeline-card__text--line">
+                  </hr>
+                  <div class="timeline-card__text--intro">
+                    <ul class="timeline-card__text--intro-list">
+                      <li>工讀期間學習影片剪輯，透過自學網站認識 HTML 語法。</li>
+                      <li>能將所學理論應用，以優化使用者介面(UI)與體驗(UX)。</li>
+                    </ul>
+                  </div>
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-cards__row">
+                <div class="timeline-card wow animate__animated animate__fadeInRight">
+                  <p class="timeline-card__text">
+                  <div class="timeline-card__text--during">2016 / 09 - 2017 / 01</div>
+                  <div class="timeline-card__text--title color-secondary"><i class="fa-solid fa-briefcase"></i> 特別助理<span> / 六星集股份有限公司</span></div>
+                  <hr class="timeline-card__text--line">
+                  </hr>
+                  <div class="timeline-card__text--intro">
+                    <ul class="timeline-card__text--intro-list">
+                      <li>總經理行程安排與隨行，支援商務場合。</li>
+                      <li>協助規劃 400 人尾牙活動與執行。</li>
+                      <li>協助業務部門開發合作企業夥伴。</li>
+                    </ul>
+                  </div>
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-cards__row">
+                <div class="timeline-card wow animate__animated animate__fadeInLeft">
+                  <p class="timeline-card__text">
+                  <div class="timeline-card__text--during">2017 / 07 - 2019 / 08</div>
+                  <div class="timeline-card__text--title color-secondary"><i class="fa-solid fa-briefcase"></i> 行政專員<span> / 伊甸-大龍養護中心</span></div>
+                  <hr class="timeline-card__text--line">
+                  </hr>
+                  <div class="timeline-card__text--intro">
+                    <ul class="timeline-card__text--intro-list">
+                      <li>執行 5 件以上政府補助專案計畫。</li>
+                      <li>ERP 操作、零用金出納、年度預算管理。</li>
+                      <li>薪酬計算、班表安排、差勤管理、招募任用及外籍勞工管理。</li>
+                    </ul>
+                  </div>
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-cards__row">
+                <div class="timeline-card wow animate__animated animate__fadeInRight">
+                  <p class="timeline-card__text">
+                  <div class="timeline-card__text--during">2019 / 09 - 2020 / 07</div>
+                  <div class="timeline-card__text--title color-secondary"><i class="fa-solid fa-briefcase"></i> 專案經理<span> / 鉅微管理顧問公司</span></div>
+                  <hr class="timeline-card__text--line">
+                  </hr>
+                  <div class="timeline-card__text--intro">
+                    <ul class="timeline-card__text--intro-list">
+                      <li>Google、Micron、P&G、花王、信義房屋…等國內外至少 40 家企業客戶年度專案。</li>
+                      <li>企業客戶關係維護。</li>
+                      <li>開發新合約，既有客戶續約、提案議價。</li>
+                    </ul>
+                  </div>
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-cards__row">
+                <div class="timeline-card wow animate__animated animate__fadeInLeft">
+                  <p class="timeline-card__text">
+                  <div class="timeline-card__text--during">2020 / 09 - 2021 / 11</div>
+                  <div class="timeline-card__text--title color-secondary"><i class="fa-solid fa-briefcase"></i> 人資專員<span> / 啟諾科技有限公司</span></div>
+                  <hr class="timeline-card__text--line">
+                  </hr>
+                  <div class="timeline-card__text--intro">
+                    <ul class="timeline-card__text--intro-list">
+                      <li>擔任內部講師，負責開發、培訓與講授課程。</li>
+                      <li>人力招募作業，能一個月招募 12 位新人。</li>
+                      <li>服務數據分析，產出報告與優化建議。</li>
+                    </ul>
+                  </div>
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-cards__row">
+                <div class="timeline-card wow animate__animated animate__fadeInRight">
+                  <p class="timeline-card__text">
+                  <div class="timeline-card__text--during">2022 / 03 - 2022 / 08</div>
+                  <div class="timeline-card__text--title color-primary"><i class="fa-solid fa-graduation-cap"></i> 前端網頁開發技術班<span> / 泰山職業訓練場</span></div>
+                  <hr class="timeline-card__text--line">
+                  </hr>
+                  <div class="timeline-card__text--intro">
+                    <ul class="timeline-card__text--intro-list">
+                      <li>網頁編排技術：HTML 5 / CSS 3 / SASS / Bootstrap / RWD / Vuetify / Quasar</li>
+                      <li>網頁動態技術：JavaScript (ES6) / jQuery / Vue.js 3</li>
+                      <li>後端與資料庫：Node.js / MongoDB / Cloudinary / Express.js / Heroku / Git</li>
+                      <li>數位媒體應用：Photoshop / Illustrator / Figma / UI & UX</li>
+                    </ul>
+                  </div>
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-cards__row">
+                <div class="timeline-card wow animate__animated animate__fadeInLeft">
+                  <p class="timeline-card__text">
+                  <div class="timeline-card__text--during">2022 / 10 - 2023 / 02</div>
+                  <div class="timeline-card__text--title color-primary"><i class="fa-solid fa-graduation-cap"></i> UIUX 自學<span> / HaHow 線上課程</span></div>
+                  <hr class="timeline-card__text--line">
+                  </hr>
+                  <div class="timeline-card__text--intro">
+                    <ul class="timeline-card__text--intro-list">
+                      <li>從入門到業界實戰 - UI / UX 前端網頁設計</li>
+                      <li>UX 設計/研究全攻略：給新手的職場通識課</li>
+                    </ul>
+                  </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End experience -->
+
+      <!-- Start portfolio -->
+      <div id="portfolio" class="portfolio bg-color-white lean-bg--top lean-bg--bottom title">
+        <div class="container section">
+          <h2 class="subtitle u-text-center wow animate__animated animate__tada">PORTFOLIO</h2>
+          <div class="portfolio-list">
+            <div class="portfolio-item wow animate__animated animate__fadeInUp">
+              <div class="row">
+                <div class="col-12">
+                  <div class="imgbox">
+                    <a href="./images/portfolio/portfolio-masterfirm01_HD.png" data-fancybox="法師事務所" data-caption="法師事務所-首頁">
+                      <div class="imgbox__inner imgbox__inner--16-9">
+                        <!-- <div class="image rounded" style="background-image: url('./images/portfolio/portfolio-masterfirm.png');"></div> -->
+                        <img class="image rounded" src="./images/portfolio/portfolio-masterfirm01.png"></img>
+                      </div>
+                    </a>
+                    <!-- <div style="display:none">
+                      <a data-fancybox="法師事務所" href="https://lipsum.app/id/61/1800x1200">
+                        <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+                      </a>
+                      <a data-fancybox="法師事務所" href="https://lipsum.app/id/62/1800x1200">
+                        <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+                      </a>
+                      <a data-fancybox="法師事務所" href="https://lipsum.app/id/63/1800x1200">
+                        <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+                      </a>
+                      <a data-fancybox="法師事務所" href="https://lipsum.app/id/64/1800x1200">
+                        <img class="rounded" src="https://lipsum.app/id/64/120x80" />
+                      </a>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="portfolio-item__text portfolio-item__text-lg">
+                    <h3 class="portfolio-item__title">法師事務所<span> - 商業形象網站</span></h3>
+                    <p class="portfolio-item__intro">為協助母親將道教靈學發揚光大，以「律師事務所」為設計概念出發，從網站視覺、架構、前端到後端設計，獨立完成一個母親專屬的個人網站，讓母親能宣揚靈學知識的同時獲得更多曝光，與對靈學有興趣的人們相互交流，且網站專注於 RWD 設計，使用手機、電腦操作皆無障礙。</p>
+                    <a href="https://mudi0710.github.io/MasterFirm-front/" target="_blank" class="text-btn text-btn--primary text-btn--lg text-btn--left">前往查看</a>
+                  </div>
+                </div>
+                <!-- Start 專題網站功能 -->
+                <div class="col-12 col-lg-6 order-lg-3">
+                  <div class="portfolio-item__function">
+                    <h6 class="portfolio-item__function-title">網站功能</h6>
+                    <hr class="portfolio-item__function-line">
+                    <ul class="portfolio-item__function-menu">
+                      <li>會員 / 管理者 - 註冊及登入</li>
+                      <li>會員 / 管理者 - 個人資料編輯修改</li>
+                      <li>會員 / 管理者 - 訂單查詢</li>
+                      <li>會員 - 購物車系統</li>
+                      <li>管理者 - 手工商品新增、修改、刪除、查詢</li>
+                      <li>管理者 - 服務項目新增、修改、刪除、查詢</li>
+                      <li>管理者 - 全站文章新增、修改、刪除、查詢</li>
+                      <li>管理者 - 全站文宣 (含圖) 新增、修改、刪除</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 order-lg-4">
+                  <div class="portfolio-item__function">
+                    <h6 class="portfolio-item__function-title">使用技術</h6>
+                    <hr class="portfolio-item__function-line">
+                    <dl class="portfolio-item__function-menu">
+                      <li class="color-secondary">網頁編排技術：<br>
+                        <span class="color-black">HTML / Sass / RWD / Quasar / SweetAlert</span>
+                      </li>
+                      <li class="color-secondary">網頁動態技術：<br>
+                        <span class="color-black">Vue.js 3</span>
+                      </li>
+                      <li class="color-secondary">後端與資料庫：<br>
+                        <span class="color-black">Node.js / MongoDB / Cloudinary / Express.js / Heroku</span>
+                      </li>
+                      <li class="color-secondary">其他相關技術：<br>
+                        <span class="color-black">Axios / Bcrypt / Cors / Npm / Passport / Pinia / Vaildator</span>
+                      </li>
+                    </dl>
+                  </div>
+                </div>
+                <!-- End 專題網站功能 -->
+              </div>
+            </div>
+            <div class="portfolio-item wow animate__animated animate__fadeInUp">
+              <div class="row">
+                <div class="col-12 col-lg-7">
+                  <div class="imgbox">
+                    <a href="https://www.youtube.com/watch?v=xazmGWSWVaQ" data-fancybox="獵殺波利" data-caption="獵殺波利 - 遊戲影片">
+                      <div class="imgbox__inner imgbox__inner--16-9">
+                        <!-- <div class="image" style="background-image: url('./images/portfolio/portfolio-poring01.png');"></div> -->
+                        <img class="image" src="./images/portfolio/portfolio-poring01.png"></img>
+                      </div>
+                    </a>
+                    <div style="display:none">
+                      <a href="./images/portfolio/portfolio-poring02_HD.png" data-fancybox="獵殺波利" data-caption="獵殺波利 - 示意圖 1">
+                        <img class="rounded" src="./images/portfolio/portfolio-poring02.png" />
+                      </a>
+                      <a href="./images/portfolio/portfolio-poring03_HD.png" data-fancybox="獵殺波利" data-caption="獵殺波利 - 示意圖 2">
+                        <img class="rounded" src="./images/portfolio/portfolio-poring03.png" />
+                      </a>
+                      <a href="./images/portfolio/portfolio-poring04_HD.png" data-fancybox="獵殺波利" data-caption="獵殺波利 - 遊戲結束">
+                        <img class="rounded" src="./images/portfolio/portfolio-poring04.png" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                  <div class="portfolio-item__text">
+                    <h3 class="portfolio-item__title portfolio-item__title--left">獵殺波利<span> - RO 懷舊射擊遊戲</span></h3>
+                    <p class="portfolio-item__tip"><i class="portfolio-item__tip-icon fa-solid fa-bookmark"></i>使用 jQuery 對 DOM 操作製作而成</p>
+                    <p class="portfolio-item__intro portfolio-item__intro--right">以懷舊線上遊戲 ⟪仙境傳說⟫ 為出發點，搭配武器選擇、技能元素與背景音樂，呈現豐富的視聽效果與操作體驗，讓使用者回憶遊戲最初的感動。<br><br>在特定時間內獵殺波利，不同波利擁有各自的特性及分數，可於右側功能區切換職業性別（施放技能不同）與武器造型，點擊遊戲開始後，總分及剩餘時間將呈現在右下方。</p>
+                    <p class="portfolio-item__notice">* 瀏覽裝置尺寸建議 1600 x 900 以上<br>
+                      * 遊戲開始後將自動播放背景音樂，敬請留意裝置播放音量</p>
+                    <div class="label-group">
+                      <div class="label">Photoshop</div>
+                      <div class="label">HTML</div>
+                      <div class="label">CSS</div>
+                      <div class="label">jQuery</div>
+                    </div>
+                    <a href="https://mudi0710.github.io/portfolio_poring/" target="_blank" class="text-btn text-btn--primary text-btn--lg text-btn--right">前往查看</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item wow animate__animated animate__fadeInUp">
+              <div class="row">
+                <div class="col-12 col-lg-7 order-lg-2">
+                  <div class="imgbox">
+                    <a href="./images/portfolio/portfolio-squidgame01_HD.png" data-fancybox="魷魚遊戲" data-caption="魷魚遊戲 - 遊戲封面">
+                      <div class="imgbox__inner imgbox__inner--16-9">
+                        <!-- <div class="image" style="background-image: url('./images/portfolio/portfolio-squidgame01.png');"></div> -->
+                        <img class="image" src="./images/portfolio/portfolio-squidgame01.png"></img>
+                      </div>
+                    </a>
+                    <div style="display:none">
+                      <a href="./images/portfolio/portfolio-squidgame02_HD.png" data-fancybox="魷魚遊戲" data-caption="魷魚遊戲 - 示意圖 1">
+                        <img class="rounded" src="./images/portfolio/portfolio-squidgame02.png" />
+                      </a>
+                      <a href="./images/portfolio/portfolio-squidgame03_HD.png" data-fancybox="魷魚遊戲" data-caption="魷魚遊戲 - 示意圖 2">
+                        <img class="rounded" src="./images/portfolio/portfolio-squidgame03.png" />
+                      </a>
+                      <a href="./images/portfolio/portfolio-squidgame04_HD.png" data-fancybox="魷魚遊戲" data-caption="魷魚遊戲 - 遊戲結束">
+                        <img class="rounded" src="./images/portfolio/portfolio-squidgame04.png" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 order-lg-1">
+                  <div class="portfolio-item__text portfolio-item__text--right">
+                    <h3 class="portfolio-item__title portfolio-item__title--right">魷魚遊戲<span> - 軟足類動物翻牌配對遊戲</span></h3>
+                    <p class="portfolio-item__tip"><i class="portfolio-item__tip-icon fa-solid fa-bookmark"></i>使用 jQuery 結合 CSS 3D 實現的翻牌配對遊戲</p>
+                    <p class="portfolio-item__intro portfolio-item__intro--left">以當紅影集 ⟪Squid Game⟫ 為出發點，結合「<a href="https://www.facebook.com/10secondsclass/" target="_blank">十秒鐘教室</a>」繪製之常見軟足類動物圖，以遊戲的方式增加大眾對於易混淆動物的認識。<br><br>上下排分別是隨機的軟足類動物外型及名稱，當找到配對的卡片時，軟足類動物簡介將會浮現在中間。</p>
+                    <p class="portfolio-item__notice">* 瀏覽裝置尺寸建議 1200 x 675 以上</p>
+                    <div class="label-group">
+                      <div class="label">Photoshop</div>
+                      <div class="label">HTML</div>
+                      <div class="label">CSS</div>
+                      <div class="label">jQuery</div>
+                    </div>
+                    <a href="https://mudi0710.github.io/practice_jq_cards/CardGame" target="_blank" class="text-btn text-btn--primary text-btn--lg text-btn--left">前往查看</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item wow animate__animated animate__fadeInUp">
+              <div class="row">
+                <div class="col-12 col-lg-7">
+                  <div class="imgbox">
+                    <a href="./images/portfolio/portfolio-clock01_HD.png" data-fancybox="Relax Time" data-caption="Relax Time - 示意圖 1">
+                      <div class="imgbox__inner imgbox__inner--16-9">
+                        <!-- <div class="image" style="background-image: url('./images/portfolio/portfolio-clock01.png');"></div> -->
+                        <img class="image" src="./images/portfolio/portfolio-clock01.png"></img>
+                      </div>
+                    </a>
+                    <div style="display:none">
+                      <a href="./images/portfolio/portfolio-clock02_HD.png" data-fancybox="Relax Time" data-caption="Relax Time - 示意圖 2">
+                        <img class="rounded" src="./images/portfolio/portfolio-clock02.png" />
+                      </a>
+                      <a href="./images/portfolio/portfolio-clock03_HD.png" data-fancybox="Relax Time" data-caption="Relax Time - 示意圖 3">
+                        <img class="rounded" src="./images/portfolio/portfolio-clock03.png" />
+                      </a>
+                      <a href="./images/portfolio/portfolio-clock04_HD.png" data-fancybox="Relax Time" data-caption="Relax Time - 示意圖 4">
+                        <img class="rounded" src="./images/portfolio/portfolio-clock04.png" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                  <div class="portfolio-item__text">
+                    <h3 class="portfolio-item__title portfolio-item__title--left">Relax Time<span> - 線上時鐘</span></h3>
+                    <p class="portfolio-item__tip"><i class="portfolio-item__tip-icon fa-solid fa-bookmark"></i>結合 JavaScript 對 DOM 操作與 CSS Rotate 製作而成</p>
+                    <p class="portfolio-item__intro portfolio-item__intro--right">在「繁忙都市中生活的現代人，別忘了找個寧靜角落喘口氣」的心情下，製作一個能讓上班族在「休息片刻再繼續趕場」的狀況下，查詢時間的線上時鐘。<br><br>採用低飽和、柔軟色調，配合簡單乾淨的版面，試圖營造舒緩情緒、釋放壓力的氛圍，讓使用者可以隨心情切換喜歡的色調之餘，也訓練自己對色彩搭配以及 CSS Shadow 操作的熟練度。</p>
+                    <div class="label-group">
+                      <div class="label">HTML</div>
+                      <div class="label">CSS</div>
+                      <div class="label">JavaScript</div>
+                    </div>
+                    <a href="https://mudi0710.github.io/portfolio_clock/" target="_blank" class="text-btn text-btn--primary text-btn--lg text-btn--right">前往查看</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item wow animate__animated animate__fadeInUp">
+              <div class="row">
+                <div class="col-12 col-lg-7 order-lg-2">
+                  <div class="imgbox">
+                    <a href="./images/portfolio/portfolio-calculator01_HD.png" data-fancybox="Just Calculator" data-caption="Just Calculator - 示意圖 1">
+                      <div class="imgbox__inner imgbox__inner--16-9">
+                        <!-- <div class="image" style="background-image: url('./images/portfolio/portfolio-calculator01.png');"></div> -->
+                        <img class="image" src="./images/portfolio/portfolio-calculator01.png"></ㄛ>
+                      </div>
+                    </a>
+                    <div style="display:none">
+                      <a href="./images/portfolio/portfolio-calculator02_HD.png" data-fancybox="Just Calculator" data-caption="Just Calculator - 示意圖 2">
+                        <img class="rounded" src="./images/portfolio/portfolio-calculator02.png" />
+                      </a>
+                      <a href="./images/portfolio/portfolio-calculator03_HD.png" data-fancybox="Just Calculator" data-caption="Just Calculator - 示意圖 3">
+                        <img class="rounded" src="./images/portfolio/portfolio-calculator03.png" />
+                      </a>
+                      <a href="./images/portfolio/portfolio-calculator04_HD.png" data-fancybox="Just Calculator" data-caption="Just Calculator - 示意圖 4">
+                        <img class="rounded" src="./images/portfolio/portfolio-calculator04.png" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 order-lg-1">
+                  <div class="portfolio-item__text portfolio-item__text--right">
+                    <h3 class="portfolio-item__title portfolio-item__title--right">Just Calculator<span> - 線上計算機</span></h3>
+                    <p class="portfolio-item__tip"><i class="portfolio-item__tip-icon fa-solid fa-bookmark"></i>結合 JavaScript 對 DOM 操作與 Table 製作而成</p>
+                    <p class="portfolio-item__intro portfolio-item__intro--left">精簡俐落的工作環境及桌面，不但助益於情緒舒適度，也能提升工作效率。「追求質感與效率？從工具開始吧！解放你的工作台面，交給線上程式。」<br><br>採用無印風格設計，以免費圖庫取得的背景來模擬工作場景，讓使用者無需再使用笨重的實體計算機，利用滑鼠或鍵盤就能完成簡易的運算需求。</p>
+                    <div class="label-group">
+                      <div class="label">HTML</div>
+                      <div class="label">CSS</div>
+                      <div class="label">JavaScript</div>
+                    </div>
+                    <a href="https://mudi0710.github.io/portfolio_calculator/" target="_blank" class="text-btn text-btn--primary text-btn--lg text-btn--left">前往查看</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group btn-group--center portfolio__btn-group wow animate__animated animate__bounceIn">
+            <a href="#" class="btn btn--secondary btn--md">更多作品</a>
+          </div>
+        </div>
+      </div>
+      <!-- End portfolio -->
+
+      <!-- Start contact -->
+      <div id="contact" class="contact title">
+        <div class="container section">
+          <h2 class="subtitle u-text-center color-white wow animate__animated animate__tada">CONTACT</h2>
+          <form enctype="text/plain" accept-charset="UTF-8" class="form wow animate__animated animate__fadeInUp">
+            <div class="row">
+              <div class="col-12">
+                <label for="Name">Name</label>
+                <input id="nameText" name="Name" type="text" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="Phone">Phone</label>
+                <input id="telText" name="Phone" type="tel" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="Email">Email</label>
+                <input id="emailText" name="Email" type="email" required>
+              </div>
+              <div class="col-12">
+                <label for="Subject">Subject</label>
+                <input id="subText" name="Subject" type="text" required>
+              </div>
+              <div class="col-12">
+                <label for="Message">Message</label>
+                <textarea id="msgText" name="Message" cols="30" rows="10" required></textarea>
+              </div>
+              <div class="btn-group btn-group--center form__btn-group">
+                <input type="button" class="btn btn--primary btn--md" value="Send" onclick="submitHandler();">
+                <!-- 創建一個隱形的 <a>，當使用者輸入好內容點擊按鈕之後，JavaScript 會取得輸入框中的內容，並且格式化後傳遞給 <a>，然後模擬點擊 <a> -->
+                <a id="mailTo"></a>
+              </div>
+            </div>
+          </form>
+          <div class="divide-text wow animate__animated animate__fadeIn">or</div>
+          <div class="info">
+            <div class="info__email wow animate__animated animate__bounceInUp">
+              <a href="mailto:nomis820710@gmail.com">nomis820710@gmail.com</a>
+            </div>
+            <div class="info__phone wow animate__animated animate__bounceInUp">
+              <a href="tel:0987999378">0987-999-378</a>
+            </div>
+            <div class="info__social-btn">
+              <a href="https://github.com/Mudi0710" target="_blank" class="icon-btn color-primary wow animate__animated animate__lightSpeedInRight" data-wow-delay="0.3s">
+                <i class="icon fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="icon-btn color-primary wow animate__animated animate__lightSpeedInRight" data-wow-delay="0.6s">
+                <i class="icon fa-brands fa-behance"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End contact -->
+
+    </section>
+    <!-- End main -->
+
+    <!-- Start footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="final-text">感謝您瀏覽，如有任何合作邀約，歡迎使用信箱聯繫 :)<br>
+          祝您有個美好的一天！</p>
+        <p class="copyright">Copyright © 2023 NomisYang web design</p>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <!-- My JS-dialog -->
+    <script src="./js/dialog.js"></script>
+    <!-- WOW.js -->
+    <script src="./js/wow.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script> -->
+    <!-- Fancybox.js -->
+    <script src="./js/fancybox.umd.js"></script>
+    <!-- Gsap.js -->
+    <script src="./js/gsap.js"></script>
+    <script src="./js/ScrollTrigger.js"></script>
+    <!-- My JS-Custom -->
+    <script src="./js/custom.js"></script>
+    <!-- My JS-Gsap -->
+    <script src="./js/gsapDefined.js"></script>
+
+    <script>
+      //宣告預設表單內容為空 （你想要的話也可以加東西）
+      var initSubject = '';
+      var initMessage = '';
+
+      //按下傳送按鈕後執行
+      function submitHandler() {
+        var to = "nomis820710@gmail.com"; //寫死的傳送對象，不會顯示在網頁上
+        var name = nameText.value; //讀取ID為 nameText 物件中的值
+        var tel = telText.value;
+        var email = emailText.value;
+        var subject = subText.value;
+
+        //把user填的資料都塞到 mail body 中
+        var message = "" + msgText.value + '%0A%0A%0A'; //%0A是換行 換了三行
+        message += "From：" + nameText.value + '%0A';
+        message += "Tel：" + telText.value + '%0A';
+        message += "Email：" + emailText.value + '%0A';
+
+        //傳送的主要程式碼
+        mailTo.href = "mailto:" + to + "?subject=" + subject + "&body=" + message;
+        mailTo.click();
+      }
+
+      //在body onload
+      function init() {
+        subText.value = initSubject;
+        msgText.value = initMessage;
+      }
+    </script>
+</body>
+
+</html>
