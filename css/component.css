@@ -193,7 +193,6 @@ body {
   padding: 0 64px;
 }
 
-
 .btn.btn--sm {
   font-size: 14px;
   line-height: 32px;
@@ -1017,6 +1016,14 @@ body {
   font-family: 'Noto Sans TC', 'Helvetica', 'roboto', arial, sans-serif;
   margin-top: 0;
   margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .skill-card__title {
+    font-size: 24px;
+  }
 }
 
 .skill-card__line {
@@ -1025,6 +1032,14 @@ body {
 
 .skill-card__text {
   margin: 0;
+  font-size: 14px;
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .skill-card__text {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1227,13 +1242,25 @@ body {
 }
 
 .timeline-card__text--title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 2;
 }
 
+@media (min-width: 768px) {
+.timeline-card__text--title {
+    font-size: 20px;
+  }
+}
+
 .timeline-card__text--title span {
-  font-size: 14px;
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+.timeline-card__text--title span {
+    font-size: 14px;
+  }
 }
 
 .timeline-card__text--line {
@@ -1245,8 +1272,14 @@ body {
 }
 
 .timeline-card__text--intro {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+.timeline-card__text--intro {
+    font-size: 16px;
+  }
 }
 
 .timeline-card__text--intro-list {
