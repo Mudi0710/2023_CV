@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+  <!-- Title -->
+  <title>Web Design - 法師事務所</title>
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/component.css">
+  <link rel="stylesheet" href="./css/uiux.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="./css/animate.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+  <!-- Fancybox.css -->
+  <link rel="stylesheet" href="./css/fancybox.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+<body onload="init()">
+  <div class="wrapper">
+
+    <!-- Start header -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="navbar row justify-content-center">
+          <div class="link-bar navbar__link-bar align-self-center row">
+            <ul id="link-bar__menu" class="link-bar__menu col-8 offset-2">
+              <li id="background-link" class="link-bar__item">
+                <a class="link" href="#background">產品背景</a>
+              </li>
+              <li id="research-link" class="link-bar__item">
+                <a class="link" href="#research">競品研究</a>
+              </li>
+              <li id="functionalMap-link" class="link-bar__item">
+                <a class="link" href="#functionalMap">功能地圖</a>
+              </li>
+              <li id="flowChart-link" class="link-bar__item">
+                <a class="link" href="#flowChart">流程圖</a>
+              </li>
+              <li id="wireFrame-link" class="link-bar__item">
+                <a class="link" href="#wireFrame">線框圖</a>
+              </li>
+              <li id="typograph-link" class="link-bar__item">
+                <a class="link" href="#typograph">核心樣式</a>
+              </li>
+            </ul>
+            <a id="link-bar__burger" class="link-bar__burger col-2 u-mobile">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start main -->
+    <section class="main">
+
+      <!-- Start UIUX -->
+      <div class="container">
+        <div class="row">
+          <img class="textImage" src="./images/uiux_masterfirm/01. cover.png">
+          <div id="background"></div>
+          <img class="textImage" src="./images/uiux_masterfirm/02. background.png">
+          <div id="research"></div>
+          <img class="textImage" src="./images/uiux_masterfirm/03. research.png">
+          <div id="functionalMap"></div>
+          <div class="title">Functional Map</div>
+          <img class="textImage" src="./images/uiux_masterfirm/04. Functional Map.png">
+          <div id="flowChart"></div>
+          <div class="title">Flow Chart</div>
+          <img class="textImage" src="./images/uiux_masterfirm/05. Flow Chart-1.png">
+          <img class="textImage" src="./images/uiux_masterfirm/05. Flow Chart-2.png">
+          <img class="textImage" src="./images/uiux_masterfirm/05. Flow Chart-3.png">
+          <div id="wireFrame"></div>
+          <div class="title">Wireframe</div>
+          <img class="textImage" src="./images/uiux_masterfirm/06. Wireframe-1.png">
+          <img src="./images/uiux_masterfirm/06. Wireframe-2.png">
+          <img src="./images/uiux_masterfirm/06. Wireframe-3.png">
+          <img src="./images/uiux_masterfirm/06. Wireframe-4.png">
+          <img src="./images/uiux_masterfirm/06. Wireframe-5.png">
+          <img src="./images/uiux_masterfirm/06. Wireframe-6.png">
+          <img src="./images/uiux_masterfirm/06. Wireframe-7.png">
+          <img src="./images/uiux_masterfirm/06. Wireframe-8.png">
+          <img src="./images/uiux_masterfirm/06. Wireframe-9.png">
+          <img src="./images/uiux_masterfirm/06. Wireframe-10.png">
+          <img src="./images/uiux_masterfirm/06. Wireframe-11.png">
+          <div id="typograph"></div>
+          <img class="textImage" src="./images/uiux_masterfirm/07. Typograph, icon, color.png">
+
+
+          <!-- <div class="row">
+            <div class="col-12">
+              <div class="imgbox">
+                <a href="./images/portfolio/portfolio-masterfirm01_HD.png" data-fancybox="法師事務所" data-caption="法師事務所-首頁">
+                  <div class="imgbox__inner imgbox__inner--16-9">
+                    <div class="image rounded" style="background-image: url('./images/portfolio/portfolio-masterfirm.png');"></div>
+                    <img class="image rounded" src="./images/portfolio/portfolio-masterfirm01.png"></img>
+                  </div>
+                </a>
+                <div style="display:none">
+                  <a data-fancybox="法師事務所" href="https://lipsum.app/id/61/1800x1200">
+                    <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+                  </a>
+                  <a data-fancybox="法師事務所" href="https://lipsum.app/id/62/1800x1200">
+                    <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+                  </a>
+                  <a data-fancybox="法師事務所" href="https://lipsum.app/id/63/1800x1200">
+                    <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+                  </a>
+                  <a data-fancybox="法師事務所" href="https://lipsum.app/id/64/1800x1200">
+                    <img class="rounded" src="https://lipsum.app/id/64/120x80" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+      <!-- End UIUX -->
+
+    </section>
+    <!-- End main -->
+
+    <!-- Start footer -->
+    <footer class="footer">
+      <div class="container">
+        <a href="https://mudi0710.github.io/CV_2023/" target="_blank" class="text-btn text-btn--primary text-btn--lg text-btn--left">返回查看作品集</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://mudi0710.github.io/MasterFirm-front/" target="_blank" class="text-btn text-btn--primary text-btn--lg text-btn--left">查看專題開發成果</a>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <!-- My JS-dialog -->
+    <script src="./js/dialog.js"></script>
+    <!-- WOW.js -->
+    <script src="./js/wow.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script> -->
+    <!-- Fancybox.js -->
+    <script src="./js/fancybox.umd.js"></script>
+    <!-- Gsap.js -->
+    <script src="./js/gsap.js"></script>
+    <script src="./js/ScrollTrigger.js"></script>
+    <!-- My JS-Custom -->
+    <script src="./js/custom.js"></script>
+    <!-- My JS-Gsap -->
+    <script src="./js/gsapDefined.js"></script>
+</body>
+
+</html>
