@@ -24,6 +24,10 @@ body {
   }
 }
 
+img {
+  width: 100%;
+}
+
 .textImage {
   margin-top: 56px;
 }
