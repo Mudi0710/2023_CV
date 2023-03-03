@@ -28,15 +28,57 @@ img {
   width: 100%;
 }
 
-.textImage {
+.mobileImage {
   margin-top: 56px;
+}
+
+@media (min-width: 768px) {
+
+  .mobileImage,
+  .mobile {
+    display: none;
+  }
+}
+
+.desktopImage,
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopImage {
+    margin-top: 56px;
+    display: block;
+  }
+
+  .desktop {
+    display: block;
+  }
 }
 
 .title {
   color: #D09139;
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 18px;
+  font-weight: 600;
   margin-top: 80px;
+}
+
+@media (min-width: 440px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 500px) {
+  .title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 576px) {
+  .title {
+    font-size: 24px;
+  }
 }
 
 .label {
