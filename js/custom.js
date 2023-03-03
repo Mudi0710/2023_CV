@@ -17,9 +17,9 @@ $(document).ready(function () {
   // WOW plugin initalize
   new WOW().init();
 
-  // Fancybox plugin options
-  $('[data-fancybox]').fancybox({
-    // loop: true
-    infinite: true,
-  })
+  // // Fancybox plugin options
+  // $('[data-fancybox]').fancybox({
+  //   // loop: true
+  //   infinite: true,
+  // })
 })
